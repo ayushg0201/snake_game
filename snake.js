@@ -21,6 +21,7 @@ function draw(){
     ctx.drawImage(g,0,0);
     
     for(let i = 0; i < snake.length ; i++){
+	ctx.fillStyle = ( i == 0 )? "red" : "black";
         ctx.fillRect(snake[i].x,snake[i].y,grid,grid);
         ctx.strokeStyle = "white";
         ctx.strokeRect(snake[i].x,snake[i].y,grid,grid);
