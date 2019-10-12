@@ -13,3 +13,5 @@ snake[0]={
 	x: 9*grid,
 	y: 10*grid
 };
+
+
