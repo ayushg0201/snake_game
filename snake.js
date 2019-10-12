@@ -35,6 +35,13 @@ document.addEventListener("keydown",(e)=>){
 
 function draw(){
     ctx.drawImage(g,0,0);
+	ctx.drawImage(beerImg,beer.x,beer.y);
+    let snakeX = snake[0].x;
+    let snakeY = snake[0].y;
+     if(d=="left") snakeX -= grid;
+     if(d=="up") snakeY -= grid;
+     if(d=="right") snakeX += grid;
+     if(d=="down") snakeY += grid;
     
     for(let i = 0; i < snake.length ; i++){
 	ctx.fillStyle = ( i == 0 )? "red" : "black";
