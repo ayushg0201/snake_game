@@ -14,4 +14,23 @@ snake[0]={
 	y: 10*grid
 };
 
+let beer={
+      x:Math.floor(Math.random()*17+1)*grid,
+      y:Math.floor(Math.random()*15+1)*grid,
+}
 
+let d;
+document.addEventListener("keydown",(e)=>{
+let k = e.keyCode;
+if(k == 37 && d!="right"){
+d = "left"
+}else if(k == 38 && d!="down")
+{
+ d="up"
+}else if(k == 39 && d!= "left"){
+  d = "right"
+}else if(k == 40 && d!= "up"){
+  d="down"
+}
+  console.log(d);
+})
