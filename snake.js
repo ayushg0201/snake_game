@@ -33,19 +33,18 @@ document.addEventListener("keydown",(e)=>){
      console.log(d);
 })
 
-function draw(){
-    ctx.drawImage(g,0,0);
-	ctx.drawImage(beerImg,beer.x,beer.y);
-    let snakeX = snake[0].x;
-    let snakeY = snake[0].y;
-     if(d=="left") snakeX -= grid;
-     if(d=="up") snakeY -= grid;
-     if(d=="right") snakeX += grid;
-     if(d=="down") snakeY += grid;
-    
+function draw(){    
     for(let i = 0; i < snake.length ; i++){
 	ctx.fillStyle = ( i == 0 )? "red" : "black";
         ctx.fillRect(snake[i].x,snake[i].y,grid,grid);
         ctx.strokeStyle = "white";
         ctx.strokeRect(snake[i].x,snake[i].y,grid,grid);
     }
+	
+ctx.drawImage(beerImg,beer.x,beer.y);
+    let snakeX = snake[0].x;
+    let snakeY = snake[0].y;
+     if(d=="left") snakeX -= grid;
+     if(d=="up") snakeY -= grid;
+     if(d=="right") snakeX += grid;
+     if(d=="down") snakeY += grid;
