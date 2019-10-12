@@ -32,6 +32,14 @@ document.addEventListener("keydown",(e)=>){
      }
      console.log(d);
 })
+function collision(head,array){
+    for(let i = 0; i < array.length; i++){
+        if(head.x == array[i].x && head.y == array[i].y){
+            return true;
+        }
+    }
+    return false;
+}
 
 function draw(){    
 	ctx.drawImage(g,0,0);
