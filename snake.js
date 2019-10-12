@@ -13,3 +13,7 @@ snake[0]={
 	x: 9*grid,
 	y: 10*grid
 };
+let beer = {
+        x : Math.floor(Math.random()*17+1) * grid,
+        y : Math.floor(Math.random()*15+1) * grid, 
+    }
