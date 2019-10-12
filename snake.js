@@ -70,3 +70,12 @@ ctx.drawImage(beerImg,beer.x,beer.y);
         x : snakeX,
         y : snakeY
     }
+     if(snakeX < grid || snakeX > 17 * grid || snakeY < grid || snakeY > 15*grid|| collision(newpos,snake) ){
+        clearInterval(game);
+     }
+   
+    snake.unshift(newpos);
+
+}
+
+var game=setInterval(draw,100);
