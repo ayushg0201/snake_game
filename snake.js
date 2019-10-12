@@ -49,3 +49,10 @@ ctx.drawImage(beerImg,beer.x,beer.y);
      if(d=="up") snakeY -= grid;
      if(d=="right") snakeX += grid;
      if(d=="down") snakeY += grid;
+
+	snake.pop();
+	
+	let newpos = {
+		x : snakeX,
+		y : snakeY
+	}
