@@ -10,6 +10,6 @@ beerImg.src="food.png";
 let snake = [];
 
 snake[0]={
-	x: 13*grid,
-	y: 17*grid
+	x: 9*grid,
+	y: 10*grid
 };
