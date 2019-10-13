@@ -19,7 +19,7 @@ let beer = {
     }
 
 let d;
-document.addEventListener("keydown",(e)=>){
+document.addEventListener("keydown",(e)=>{
      let k  = e.keyCode;
      if(k == 37 && d!= "right"){
 	d="left"
